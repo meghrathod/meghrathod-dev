@@ -1,0 +1,76 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  padding: 0.5em;
+}
+
+.tagline {
+  color: #888;
+}
+
+.reach-icons button{
+  margin: 0.5em;
+}
+
+.fa-icon {
+  font-size: 2em;
+  margin: 0.5em;
+  color: #000;
+}
+.memoji-container {
+    height: 50%;
+    margin-top: 20%;
+
+    .memoji {
+        display: block;
+        width: 170px;
+        position: relative;
+        left: 25%;
+    }
+    .hand {
+        display: block;
+        position: relative;
+        width: 100px;
+        bottom: 60px;
+        right: 10px;
+        transform: scaleX(-1) translateX(-100px);
+    }
+    .hand {
+        animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+        animation-duration: 2.5s; /* Change to speed up or slow down */
+        animation-iteration-count: infinite; /* Never stop waving :) */
+        transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+    }
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0deg) ;
+    }
+    10% {
+        transform: rotate(14deg) ;
+    } /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-8deg) ;
+    }
+    30% {
+        transform: rotate(14deg) ;
+    }
+    40% {
+        transform: rotate(-4deg) ;
+    }
+    50% {
+        transform: rotate(10deg) ;
+    }
+    60% {
+        transform: rotate(0deg) ;
+    } /* Reset for the last half to pause */
+    100% {
+        transform: rotate(0deg) ;
+    }
+}
