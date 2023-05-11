@@ -11,6 +11,9 @@ function App() {
 
   return (
     <>
+      <div className='background-wrapper'>
+        <div className='gradient'></div>
+      </div>
       <div>
         <div className="memoji-container">
           <img src={memoji} alt="megh's memoji" className="memoji" />
@@ -20,7 +23,8 @@ function App() {
       </div>
       <h1>Hi, I{"'"}m Megh!</h1>
       <div className='tagline'>
-        Code, Netflix, Chill, Repeat. 
+        <code>Code, Netflix, Chill, Repeat.</code>
+         
       </div>
       <div className="card">
         <p>
