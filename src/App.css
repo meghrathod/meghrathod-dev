@@ -1,32 +1,32 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
 }
 
 .card {
-  padding: 0.5em;
-  margin: 2%
+    padding: 0.5em;
+    margin: 2%;
 }
 
 .tagline {
-  color: #888;
-  margin: 3%;
+    color: #888;
+    margin: 3%;
 }
 
-.reach-icons{
+.reach-icons {
     margin-top: 20%;
 }
 
-.reach-icons button{
-  margin: 0.5em;
+.reach-icons button {
+    margin: 0.5em;
 }
 
 .fa-icon {
-  font-size: 2em;
-  margin: 0.5em;
-  color: #000;
+    font-size: 2em;
+    margin: 0.5em;
+    color: #000;
 }
 .memoji-container {
     margin-top: 40%;
@@ -55,27 +55,81 @@
 
 @keyframes wave-animation {
     0% {
-        transform: rotate(0deg) ;
+        transform: rotate(0deg);
     }
     10% {
-        transform: rotate(14deg) ;
+        transform: rotate(14deg);
     } /* The following five values can be played with to make the waving more or less extreme */
     20% {
-        transform: rotate(-8deg) ;
+        transform: rotate(-8deg);
     }
     30% {
-        transform: rotate(14deg) ;
+        transform: rotate(14deg);
     }
     40% {
-        transform: rotate(-4deg) ;
+        transform: rotate(-4deg);
     }
     50% {
-        transform: rotate(10deg) ;
+        transform: rotate(10deg);
     }
     60% {
-        transform: rotate(0deg) ;
+        transform: rotate(0deg);
     } /* Reset for the last half to pause */
     100% {
-        transform: rotate(0deg) ;
+        transform: rotate(0deg);
     }
+}
+
+.group-card {
+    margin-top: 10%;
+    background-color: #fff;
+    padding: 10%;
+    margin: 2%;
+    text-align: center;
+    transition: all 1s ease-in-out;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 60, 145, 0.61);
+}
+
+.group-card:hover {
+    /* make hover transition smooth */
+    transition: all 0.75s ease-in-out;
+    -webkit-box-shadow: 0px 0px 69px -11px rgba(251, 60, 145, 0.61);
+    -moz-box-shadow: 0px 0px 69px -11px rgba(251, 60, 145, 0.61);
+    box-shadow: 0px 0px 69px -11px rgba(251, 60, 145, 0.61);
+    border-radius: 16px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .group-card {
+        background-color: #2d3748;
+        color: #fff;
+        padding: 10%;
+        margin: 2%;
+        text-align: center;
+        transition: all 1s ease-in-out;
+        border-radius: 16px;
+    }
+
+    group-card:hover {
+        /* make hover transition smooth */
+        transition: all 0.75s ease-in-out;
+        box-shadow: 0px 0px 69px -11px rgba(251, 60, 145, 0.61);
+        border-radius: 16px;
+    }
+}
+
+.bottom-border-pink{
+    --tw-border-opacity: 1;
+    border-color: rgba(251, 60, 145, 0.61);
+}
+
+.fixed-top {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+    z-index: 1030;
+    justify-content: space-between;
 }

@@ -3,10 +3,13 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import hand from "/hand.webp";
-import memoji from "/memoji_new.webp";  
+import memoji from "/memoji_new.webp";
+import { useNavigate } from 'react-router-dom';
 
 
 function Home() {
+
+    const navigate = useNavigate();
     return (
         <div className='global-body'>
             <div className='background-wrapper'>
@@ -29,7 +32,11 @@ function Home() {
                     Learn more about me or Get in touch!
                 </p>
                 <div className='reach-icons'>
-                    <button >
+                    <button onClick={
+                        () => {
+                            navigate('/about')
+                        }
+                    }>
                         About Me
                     </button>
                     <a href="mailto:me@meghrathod.dev">

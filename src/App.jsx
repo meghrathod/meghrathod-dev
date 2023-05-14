@@ -1,3 +1,4 @@
+import About from "./Pages/About";
 import Home from "./Pages/Home"
 import {
   createBrowserRouter,
@@ -10,6 +11,11 @@ const router = createBrowserRouter([
     path: "/",
     element: <Home />,
   },
+  {
+    path: "/about",
+    element: <About />
+  }
+
 ]);
 
 
