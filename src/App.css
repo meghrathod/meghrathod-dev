@@ -7,10 +7,16 @@
 
 .card {
   padding: 0.5em;
+  margin: 2%
 }
 
 .tagline {
   color: #888;
+  margin: 3%;
+}
+
+.reach-icons{
+    margin-top: 20%;
 }
 
 .reach-icons button{
@@ -23,21 +29,20 @@
   color: #000;
 }
 .memoji-container {
-    height: 50%;
-    margin-top: 0%;
+    margin-top: 40%;
 
     .memoji {
         display: block;
         width: 170px;
         position: relative;
-        left: 25%;
+        left: 0%;
     }
     .hand {
         display: block;
         position: relative;
         width: 100px;
         bottom: 60px;
-        right: 10px;
+        right: 50%;
         transform: scaleX(-1) translateX(-100px);
     }
     .hand {
