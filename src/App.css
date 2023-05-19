@@ -7,17 +7,24 @@
 
 .card {
     padding: 0.5em;
-    margin: 2%;
+    margin: 1%;
 }
 
 .tagline {
     color: #888;
-    margin: 3%;
+    margin: 1%;
 }
 
 .reach-icons {
-    margin-top: 20%;
+    margin-top: 5%;
 }
+
+.about-button{
+    margin-bottom: 10%;
+}
+
+
+
 
 .reach-icons button {
     margin: 0.5em;
@@ -29,7 +36,7 @@
     color: #000;
 }
 .memoji-container {
-    margin-top: 40%;
+    margin-top: -15%;
 
     .memoji {
         display: block;
@@ -81,17 +88,29 @@
 }
 
 .group-card {
-    margin-top: 10%;
+    /* margin-top: 10%;
     background-color: #fff;
     padding: 10%;
     margin: 2%;
     text-align: center;
     transition: all 1s ease-in-out;
     border-radius: 16px;
-    border: 1px solid rgba(251, 60, 145, 0.61);
+    border: 1px solid rgba(251, 60, 145, 0.61); */
 }
 
-.group-card:hover {
+.backdrop-blur{
+    margin-top: 10%;
+    /* background-color: #fff; */
+    padding: 10%;
+    margin: 2%;
+    text-align: center;
+    transition: all 1s ease-in-out;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 60, 145, 0.61);
+
+}
+
+.backdrop-blur:hover {
     /* make hover transition smooth */
     transition: all 0.75s ease-in-out;
     -webkit-box-shadow: 0px 0px 69px -11px rgba(251, 60, 145, 0.61);
@@ -100,9 +119,11 @@
     border-radius: 16px;
 }
 
-@media (prefers-color-scheme: dark) {
-    .group-card {
-        background-color: #2d3748;
+.dark {
+    .backdrop-blur {
+        /* background-color: #2d3748; */
+                transition: all 1s ease-in-out;
+
         color: #fff;
         padding: 10%;
         margin: 2%;
@@ -111,7 +132,7 @@
         border-radius: 16px;
     }
 
-    group-card:hover {
+    backdrop-blur:hover {
         /* make hover transition smooth */
         transition: all 0.75s ease-in-out;
         box-shadow: 0px 0px 69px -11px rgba(251, 60, 145, 0.61);
@@ -132,4 +153,17 @@
   right: 0;
     z-index: 1030;
     justify-content: space-between;
+}
+
+.header{
+    width: 100vw;
+}
+
+/* for small screens */
+@media (max-width: 768px) {
+
+    .memoji-container {
+        margin-top: 20%;
+    }
+    
 }

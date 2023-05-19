@@ -1,49 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
-  font-family: 'DM Sans',Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+    font-family: "DM Sans", Inter, system-ui, Avenir, Helvetica, Arial,
+        sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
 }
 
 code {
-  font-family: 'JetBrains Mono', monospace;
-  color: #Fb3c91;
+    font-family: "JetBrains Mono", monospace;
+    color: #fb3c91;
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+    color: #535bf2;
 }
 
 body {
-  margin: 0;
-  min-width: 320px;
-  max-height: 100vh;
+    margin: 0;
+    width: 100vw;
+    max-height: 100vh;
 }
 
-#root{
-  padding: 0;
+#root {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
 }
 
 .global-body{
@@ -51,109 +53,119 @@ body {
   place-items: center;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  overflow: clip;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+    font-size: 3.2em;
+    line-height: 1.1;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+    border-color: #646cff;
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+    outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
+
+:root {
     color: #213547;
     background-color: #ffffff;
-  }
-  a:hover {
+}
+a:hover {
     color: #747bff;
-  }
-  button {
+}
+button {
     background-color: #f9f9f9;
-  }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
-  }
-  a:hover {
-    color: #535bf2;
-  }
-  button {
-    --tw-bg-opacity: 1;
-    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-  }
+.dark {
+    /* Add a slow transition of state */
+    a:hover {
+        color: #535bf2;
+    }
+    button {
+              transition: all 1s ease-in-out;
 
-  button:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(49 68 90 / var(--tw-bg-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+    }
+
+    button:hover {
+              transition: all 1s ease-in-out;
+
+        --tw-bg-opacity: 1;
+        background-color: rgb(49 68 90 / var(--tw-bg-opacity));
+        color: #fff;
+    }
+
+    .background-wrapper {
+        transition: all 1s ease-in-out;
+        background-color: #242424;
+    }
+
     color: #fff;
-  }
+
 }
 
 @keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
-.background-wrapper{
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  overflow: clip;
-  z-index: -1;
+.background-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    /* overflow: clip; */
+    z-index: -1;
 }
 
 .gradient {
-  --size: 500px;
-  --speed: 15s;
-  --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+    --size: 500px;
+    --speed: 15s;
+    --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
 
-  /* make the gradient element fixed */
-  position: fixed;
-  top: 5%;
-  left: 35%;
-  z-index: -1;
-  background-attachment: fixed;
+    /* make the gradient element fixed */
+    position: fixed;
+    top: 5%;
+    left: 35%;
+    z-index: -1;
+    background-attachment: fixed;
 
-  width: var(--size);
-  height: var(--size);
-  filter: blur(calc(var(--size) / 5));
-  background-image: linear-gradient(hsl(158, 82%, 57%, 85%), hsl(252, 82%, 57%));
-  animation: rotate var(--speed) var(--easing) alternate infinite;
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    width: var(--size);
+    height: var(--size);
+    filter: blur(calc(var(--size) / 5));
+    background-image: linear-gradient(
+        hsl(158, 82%, 57%, 85%),
+        hsl(252, 82%, 57%)
+    );
+    animation: rotate var(--speed) var(--easing) alternate infinite;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
 
 @media (max-width: 720px) {
-  .gradient {
-    --size: 500px;
-    top: 0%;
-    left: 0%;
-  }
+    .gradient {
+        --size: 500px;
+        top: 0%;
+        left: 0%;
+    }
 }
