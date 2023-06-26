@@ -13,7 +13,7 @@ function Home() {
     const navigate = useNavigate();
     return (
         <div className='global-body'>
-            
+
             <div className='background-wrapper'>
                 <div className='gradient'></div>
             </div>
@@ -32,26 +32,27 @@ function Home() {
             </div>
             <div className="card">
                 <div className="reach-icons">
-                    <button 
-                    onClick={
-                        () => {
-                            navigate('/about')
+                    <button
+                        onClick={
+                            () => {
+                                navigate('/about')
+                            }
                         }
-                    }
-                    className='glow-button'
+                        className='glow-button'
                     >
                         About Me
                     </button>
+                    <p>
+                        Learn more about me or Get in touch!
+                    </p>
                 </div>
-                <p>
-                    Learn more about me or Get in touch!
-                </p>
 
-                
-                
-                    
+
+
+
+
                 <div className='reach-icons'>
-                    
+
                     <a href="mailto:me@meghrathod.dev">
                         <button >
                             < FontAwesomeIcon icon={faEnvelope} />
@@ -64,7 +65,7 @@ function Home() {
                         </button>
                     </a>
 
-                    
+
 
                     <a href="https://www.linkedin.com/in/meghrathod/">
                         <button >
