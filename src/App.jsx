@@ -1,10 +1,6 @@
 import About from "./Pages/About";
-import Home from "./Pages/Home"
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-
+import Home from "./Pages/Home";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
@@ -13,19 +9,16 @@ const router = createBrowserRouter([
   },
   {
     path: "/about",
-    element: <About />
-  }
-
+    element: <About />,
+  },
 ]);
 
-
 function App() {
-
   return (
-      <div className="App">
-        <RouterProvider router={router} />
-      </div>
-  )
+    <div className="App">
+      <RouterProvider router={router} />
+    </div>
+  );
 }
 
-export default App
+export default App;

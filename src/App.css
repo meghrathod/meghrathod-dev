@@ -1,98 +1,95 @@
 #root {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
 
 .card {
-    padding: 0.5em;
-    margin: 1%;
+  padding: 0.5em;
+  margin: 1%;
 }
 
 .tagline {
-    color: #888;
-    margin: 1%;
+  color: #888;
+  margin: 1%;
 }
 
 .reach-icons {
-    margin-top: 5%;
+  margin-top: 5%;
 }
 
-.reach-icons p{
-    margin-top: 5%;
+.reach-icons p {
+  margin-top: 5%;
 }
 
-.about-button{
-    margin-bottom: 10%;
+.about-button {
+  margin-bottom: 10%;
 }
-
-
-
 
 .reach-icons button {
-    margin: 0.5em;
+  margin: 0.5em;
 }
 
 .fa-icon {
-    font-size: 2em;
-    margin: 0.5em;
-    color: #000;
+  font-size: 2em;
+  margin: 0.5em;
+  color: #000;
 }
 .memoji-container {
-    margin-top: -15%;
+  margin-top: -15%;
 
-    .memoji {
-        display: block;
-        width: 170px;
-        position: relative;
-        left: 0%;
-    }
-    .hand {
-        display: block;
-        position: relative;
-        width: 100px;
-        bottom: 60px;
-        right: 50%;
-        transform: scaleX(-1) translateX(-100px);
-    }
-    .hand {
-        animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-        animation-duration: 2.5s; /* Change to speed up or slow down */
-        animation-iteration-count: infinite; /* Never stop waving :) */
-        transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
-    }
+  .memoji {
+    display: block;
+    width: 170px;
+    position: relative;
+    left: 0%;
+  }
+  .hand {
+    display: block;
+    position: relative;
+    width: 100px;
+    bottom: 60px;
+    right: 50%;
+    transform: scaleX(-1) translateX(-100px);
+  }
+  .hand {
+    animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s; /* Change to speed up or slow down */
+    animation-iteration-count: infinite; /* Never stop waving :) */
+    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  }
 }
 
 @keyframes wave-animation {
-    0% {
-        transform: rotate(0deg);
-    }
-    10% {
-        transform: rotate(14deg);
-    } /* The following five values can be played with to make the waving more or less extreme */
-    20% {
-        transform: rotate(-8deg);
-    }
-    30% {
-        transform: rotate(14deg);
-    }
-    40% {
-        transform: rotate(-4deg);
-    }
-    50% {
-        transform: rotate(10deg);
-    }
-    60% {
-        transform: rotate(0deg);
-    } /* Reset for the last half to pause */
-    100% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .group-card {
-    /* margin-top: 10%;
+  /* margin-top: 10%;
     background-color: #fff;
     padding: 10%;
     margin: 2%;
@@ -102,51 +99,50 @@
     border: 1px solid rgba(251, 60, 145, 0.61); */
 }
 
-.backdrop-blur{
-    margin-top: 10%;
-    /* background-color: #fff; */
+.backdrop-blur {
+  margin-top: 10%;
+  /* background-color: #fff; */
+  padding: 10%;
+  margin: 2%;
+  text-align: center;
+  transition: all 1s ease-in-out;
+  border-radius: 16px;
+  border: 1px solid rgba(251, 60, 145, 0.61);
+}
+
+.backdrop-blur:hover {
+  /* make hover transition smooth */
+  transition: all 0.75s ease-in-out;
+  -webkit-box-shadow: 0px 0px 69px -11px rgba(251, 60, 145, 0.61);
+  -moz-box-shadow: 0px 0px 69px -11px rgba(251, 60, 145, 0.61);
+  box-shadow: 0px 0px 69px -11px rgba(251, 60, 145, 0.61);
+  border-radius: 16px;
+}
+
+.dark {
+  .backdrop-blur {
+    /* background-color: #2d3748; */
+    transition: all 1s ease-in-out;
+
+    color: #fff;
     padding: 10%;
     margin: 2%;
     text-align: center;
     transition: all 1s ease-in-out;
     border-radius: 16px;
-    border: 1px solid rgba(251, 60, 145, 0.61);
+  }
 
-}
-
-.backdrop-blur:hover {
+  backdrop-blur:hover {
     /* make hover transition smooth */
     transition: all 0.75s ease-in-out;
-    -webkit-box-shadow: 0px 0px 69px -11px rgba(251, 60, 145, 0.61);
-    -moz-box-shadow: 0px 0px 69px -11px rgba(251, 60, 145, 0.61);
     box-shadow: 0px 0px 69px -11px rgba(251, 60, 145, 0.61);
     border-radius: 16px;
+  }
 }
 
-.dark {
-    .backdrop-blur {
-        /* background-color: #2d3748; */
-                transition: all 1s ease-in-out;
-
-        color: #fff;
-        padding: 10%;
-        margin: 2%;
-        text-align: center;
-        transition: all 1s ease-in-out;
-        border-radius: 16px;
-    }
-
-    backdrop-blur:hover {
-        /* make hover transition smooth */
-        transition: all 0.75s ease-in-out;
-        box-shadow: 0px 0px 69px -11px rgba(251, 60, 145, 0.61);
-        border-radius: 16px;
-    }
-}
-
-.bottom-border-pink{
-    --tw-border-opacity: 1;
-    border-color: rgba(251, 60, 145, 0.61);
+.bottom-border-pink {
+  --tw-border-opacity: 1;
+  border-color: rgba(251, 60, 145, 0.61);
 }
 
 .fixed-top {
@@ -155,19 +151,17 @@
   top: 0;
   left: 0;
   right: 0;
-    z-index: 1030;
-    justify-content: space-between;
+  z-index: 1030;
+  justify-content: space-between;
 }
 
-.header{
-    width: 100vw;
+.header {
+  width: 100vw;
 }
 
 /* for small screens */
 @media (max-width: 768px) {
-
-    .memoji-container {
-        margin-top: 20%;
-    }
-    
+  .memoji-container {
+    margin-top: 20%;
+  }
 }
