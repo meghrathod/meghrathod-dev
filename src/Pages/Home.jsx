@@ -23,7 +23,7 @@ function Home() {
       </div>
       <h1>Hi, I{"'"}m Megh!</h1>
       <div className="tagline">
-        <code>Code, Netflix, Chill, Repeat.</code>
+        <code>Code, Chill, Repeat.</code>
       </div>
       <div className="card">
         <div className="reach-icons">
