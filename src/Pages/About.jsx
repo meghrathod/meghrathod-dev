@@ -62,7 +62,7 @@ const About = () => {
           </div>
 
           <p className="mt-8 text-lg leading-8 text-gray-800 dark:text-gray-200 ">
-            Here's what I've been working on lately
+            Here&apos;s what I&apos;ve been working on lately
           </p>
 
           <div className="mx-auto mt-5 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 pt-3 sm:mt-10 sm:pt-5 lg:mx-0 lg:max-w-none lg:grid-cols-3">
